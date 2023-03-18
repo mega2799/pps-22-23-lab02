@@ -38,9 +38,15 @@ class TaskFunctionsTest:
     def negTest()=
         negFunction()
  
-    // def simpleCurry() = 
-        // assertEquals(1, p1(10, 3, 3))
+    def simpleCurry() = 
+        assertTrue(p1(10)(3)(3))
+        assertFalse(p1(10)(30)(30))
+        assertFalse(p1(40)(30)(10))
 
+    def nonCurryVal() = 
+        assertTrue(p2(10, 3, 3))
+        assertFalse(p2(10, 30, 30))
+        assertFalse(p2(40, 30, 10))
     def nonCurryDef() =
         assertTrue(p4(10, 3, 3))
         assertFalse(p4(10, 30, 30))
@@ -53,9 +59,10 @@ class TaskFunctionsTest:
 
     @Test
     def curryingTest()=
-        // simpleCurry()
+        simpleCurry()
         curryDef()
         nonCurryDef()
+        nonCurryVal()
 
     @Test
     def composeTest() =

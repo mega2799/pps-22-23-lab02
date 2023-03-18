@@ -13,12 +13,11 @@ object Functions extends App
     def neg[X, Y](pred : X => Boolean) : X => Boolean =
         (x : X) => !pred(x)
 
-    // val p1 : Int => Int => Int =  
-    //     x => y => z => (x > y && y == z) match
-    //         case true => 1
-    //         case false => 0
+    val p1 : Int => Int => Int => Boolean =  
+        x => y => z => (x > y && y == z)
 
-    // val p2: <NonCurriedFunType> = ...
+    val p2:(x : Int, y : Int, z : Int) => Boolean = 
+        (x, y, z) => (x > y && y == z)
 
     def p3(x : Int)(y : Int)(z : Int): Boolean =
         x > y && y == z
