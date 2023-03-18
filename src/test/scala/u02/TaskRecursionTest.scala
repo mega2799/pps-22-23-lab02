@@ -1,6 +1,6 @@
 package u02
 
-import Tasks.gcd
+import Tasks.TaskLab2.gcd
 import org.junit.Test
 import org.junit.Assert.{assertEquals, assertFalse}
 

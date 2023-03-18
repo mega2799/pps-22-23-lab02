@@ -3,10 +3,10 @@ package u02
 import org.junit.Test
 import org.junit.Assert.{assertEquals, assertFalse, assertTrue}
 
-import Tasks.Gemoetric
-import Tasks.Gemoetric.contains
-import Tasks.Gemoetric.perimeter
-import Tasks.Gemoetric.Shape
+import Tasks.TaskLab2.Gemoetric
+import Tasks.TaskLab2.Gemoetric.contains
+import Tasks.TaskLab2.Gemoetric.perimeter
+import Tasks.TaskLab2.Gemoetric.Shape
 
 class GeometryTaskTest:
     

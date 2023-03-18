@@ -1,10 +1,8 @@
 package u02
 
-package u02
-
 import org.junit.Test
 import org.junit.Assert.{assertEquals, assertFalse, assertTrue}
-import Tasks.* 
+import Tasks.TaskLab2.* 
 import Tasks.FuncitonalCombinators.Option.*
 
 class FunctionalTests:

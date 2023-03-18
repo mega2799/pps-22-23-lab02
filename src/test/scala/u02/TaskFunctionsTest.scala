@@ -3,7 +3,7 @@ package u02
 import junit.framework.TestCase.assertTrue
 import org.junit.Assert.{assertEquals, assertFalse}
 import org.junit.Test
-import Tasks.*
+import Tasks.TaskLab2.*
 import math.Fractional.Implicits.infixFractionalOps
 import math.Integral.Implicits.infixIntegralOps
 import math.Numeric.Implicits.infixNumericOps
